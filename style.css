@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header*/
+.barraNavegacion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:green;
+}
+.menuLista {
+    color: black;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.cuadroPrincipal{
+    display: flex;
+}
+.imagenContacto{
+    width: 275px;
+    border: solid black 3px;
+    border-radius: 6px;
+}
+.trabajosImagenes {
+    border-radius: 6px;
+    border: solid green 3px;
+    
+}
+li:hover {
+    transform: scale(1.5);
+    transition: transform 2s, background-color 2s;
+    background-color: rgba(255, 166, 0, 0.534);
+}
+.MenuNav{
+    background-color: white;
+}
+.menuLista:hover {
+    color: #fff;
+}
+.infoEmpresa {
+    border-style: solid;
+    border-color: rgba(255, 166, 0, 0.534);
+    background-color: rgba(255, 166, 0, 0.534);   
+}
+.infoEmpresa p {
+    text-align: center;
+}
+.menuPagina{
+    background-color: green;
+}
+/* main*/
+h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 75px;
+}
+.video {
+    width: 100%;
+    text-align: center;
+}
+.infoContacto{
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+}
+h1:hover {
+    transform: scale(1.25);
+    color: rgba(49, 102, 58, 0.534);
+}
+.divImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+.videoIndex {
+    border-style: solid;
+    border-radius: 6px;
+    background-color: green;
+    max-width: 100%;
+    height: 100%;
+}
+.textoPrincipal{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+iframe{
+    width: 25%;
+    height: 25%;
+    padding-left: 20%;
+}
+.menuPagina {
+    list-style-type: none;
+}
+li {
+    float: left;
+    margin-right: 10px;
+    padding-top: 20%;
+    padding: 0 4px;
+    border: solid;
+    border-radius: 6px;
+    background-color: rgba(0, 128, 0, 0.534);
+    font-style: normal;
+}
+.formularioContacto{
+    border: solid;
+    border-radius: 6px;
+    background-color:rgba(0, 128, 0, 0.534);
+    width: 35%;
+    font-weight: bold;
+}
+.container {
+    padding: 0 20px;
+}
+.grid-contenedor-padre {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+.equiposImagenes{
+    border-radius: 6px;
+    border: solid green 3px;
+    background-color: green;
+    max-width: 100%;
+    height: 350px;
+}
+.grid-item-hijo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.imagenesEquipos{
+    object-fit: cover;
+    height: 300px;
+    width: 100%
+}
+/* footer*/
+.footerPaginas{
+    background-color:green;
+    border-style: solid;
+    border-color: black;
+}
+.mapaUbicacion {
+    padding-left: 32%;
+    width: 35%;
+    height: 35%;
+}
+.linksRedes{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-style: italic;    
+}
+.tituloSecundario{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    font-style:normal;
+    text-align: center;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenesEquipos {
+    border-radius: 6px;
+    border: solid green 3px;
+}
+
+/* Responsive */
+@media (max-width: 1280px) {
+    h1 {
+        font-size: 45px;
+    }
+    .grid-contenedor-padre {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+}
+@media (max-width: 900px) {
+    .barraNavegacion {
+        flex-direction: column;   
+    }
+    .menuPagina {
+        margin-top: 20px;
+    }
+    .menuPagina {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 20px;
+    }
+    
+    .menuPagina li{
+        margin-bottom: 5px;
+        text-align: center;
+        background-color: #fff;
+    }
+    .menuPagina li .menuLista{
+        color: green;
+    }
+    .mapaUbicacion {
+        padding: 0;
+        width: 100%;
+    }
+    .formularioContacto {
+        width: 100%;
+    }
+}   
+@media (max-width: 600px) {
+    .grid-contenedor-padre {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
